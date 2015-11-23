@@ -39,11 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Repository.cs" />
+    <Compile Include="Interfaces\IBlogRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\EntityBase.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

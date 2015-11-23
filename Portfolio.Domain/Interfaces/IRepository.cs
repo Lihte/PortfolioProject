@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Domain.Interfaces
 {
-    public interface Repository<T>
+    public interface IRepository<T> where T : class
     {
         void Add(T entity);
         T Get(int id);
